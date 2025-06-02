@@ -6,7 +6,6 @@
     --heading-font: "Bebas Neue", sans-serif;
     --body-font: "Jost", sans-serif;   
 }
-
 *{
     margin: 0;
     padding: 0;
@@ -31,12 +30,19 @@ h1, h2{
     font-family: var(--heading-font);
     color: var(--primary-color);
 }
+/*header*/
+header{
+    display: grid;
+    grid-template-columns: 1fr 100%;
+}
+nav{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
 nav, p, section, article{
     margin: 16px;
     padding: 8px;
-}
-.socialmedia a {
-    text-decoration: none;
 }
 .hero{
     position: relative;
@@ -66,23 +72,6 @@ article{
     float: right;
     width: 125px;
 }
-section img{
-    width: 500px;
-    height: 400px;
-}
-footer img{
-    width: 35px;
-}
-
-header{
-    display: grid;
-    grid-template-columns: 1fr 100%;
-}
-nav{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-}
 .menu a{
     width: 10%;
     padding-top: 2%;
@@ -90,10 +79,23 @@ nav{
     text-decoration: none;
     border-bottom: 2px solid var(--accent2-color);
 }
+/*history section*/
 section h2{
     text-align: center;
     margin-bottom: 20px;
 }
+.container{
+    display: flex;
+    align-items: center;
+}
+.container p{
+    text-align: justify;
+}
+.container img{
+    width: 300px;
+    height: 300px;
+}
+/*adventure section*/
 .adventure{
     display: grid;
     grid-template-columns: repeat(5, 1fr);
@@ -108,6 +110,7 @@ section h2{
 .adventure figcaption{
     text-align: center;
 }
+/*footer*/
 footer{
     display: flex;
     justify-content: space-around;
@@ -117,14 +120,9 @@ footer nav{
     grid-template-columns: repeat(3, 1fr);
     column-gap: 10%;
 }
-.container{
-    display: flex;
-    align-items: center;
+footer img{
+    width: 35px;
 }
-.container p{
-    text-align: justify;
-}
-.container img{
-    width: 300px;
-    height: 300px;
+.socialmedia a {
+    text-decoration: none;
 }
