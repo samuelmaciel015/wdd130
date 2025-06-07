@@ -143,6 +143,7 @@ footer img{
 iframe {
     width: 30rem;
     height: 20rem;
+    border: 0;
 }
 .information-container {
     margin-top: 2rem;
